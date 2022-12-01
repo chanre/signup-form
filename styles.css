@@ -1,0 +1,67 @@
+:root {
+    --accountColor: #596d48;
+    --inputColor: #e5e7eb;
+    --selectedColor: blue;
+    font-family: ''
+}
+
+@font-face {
+    font-family: odin;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+@font-face{
+    font-family: butler;
+    src: url(fonts/Butler_Regular.otf);
+}
+
+h1 {
+    font-family: butler;
+    color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.picture {
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.unsplash {
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 10vh;
+    background-color: rgba(0,0,0,0.7);
+    width: 40vw;
+    height: 100px;
+}
+
+.rhodesisland {
+    height: 100px;
+    width: auto;
+}
+
