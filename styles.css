@@ -2,12 +2,7 @@
     --accountColor: #596d48;
     --inputColor: #e5e7eb;
     --selectedColor: blue;
-    font-family: ''
-}
-
-@font-face {
-    font-family: odin;
-    src: url(fonts/Norse-Bold.otf);
+    --bgColor:#1F2937;
 }
 
 @font-face{
@@ -15,9 +10,14 @@
     src: url(fonts/Butler_Regular.otf);
 }
 
-h1 {
+h1, .dummyText, .formMessage {
     font-family: butler;
     color: white;
+}
+
+.dummyText {
+    width: 50vw;
+    font-size: 2em;
 }
 
 * {
@@ -65,3 +65,32 @@ h1 {
     width: auto;
 }
 
+.spacer {
+    margin-left: 3vw;
+}
+
+.signup {
+    background-color: var(--bgColor, black);
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    background-color: #29313b;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 3vh;
+}
+
+.formMessage {
+    width: 100%;
+    padding: 2% 0 2%; 
+}
+
+.input {
+    width: 30%;
+    margin-bottom: 2%;
+}
