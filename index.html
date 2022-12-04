@@ -20,15 +20,19 @@
             <div class="dummyText">
                 <p class="spacer">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br> <br>You <em>know</em> you want to.</p>
             </div>
-            <div class="form">
-                <h2 class="formMessage spacer"> Let's do this!</h2>
-                <div class="input spacer"><label for="firstName">First Name<input type="text" name="firstName" id="firstName"></label></div>
-                <div class="input spacer"><label for="lastName">Last Name<input type="text" name="lastName" id="lastName"></label></div>
-                <div class="input spacer"><label for="email">Email<input type="email" name="email" id="email"></label></div>
-                <div class="input spacer"><label for="phoneNumber">Phone Number<input type="tel" name="phoneNumber" id="phoneNumber"></label></div>
-                <div class="input spacer"><label for="password">Password<input type="password" name="password" id="password"></label></div>
-                <div class="input spacer"><label for="confirmPass">Confirm Password<input type="password" name="confirmPass" id="confirmPass"></label></div>
-            </div>
+            <form action="#">
+                <div class="form">
+                    <h2 class="formMessage spacer"> Let's do this!</h2>
+                    <div class="input spacer"><label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" placeholder="John" required></div>
+                    <div class="input spacer"><label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" placeholder="Smith" required></div>
+                    <div class="input spacer"><label for="email">Email</label><input type="email" name="email" id="email" placeholder="someone@example.com"required></div>
+                    <div class="input spacer"><label for="phoneNumber">Phone Number</label><input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required></div>
+                    <div class="input spacer"><label for="password">Password</label><input type="password" name="password" id="password" required></div>
+                    <div class="input spacer"><label for="confirmPass">Confirm Password</label><input type="password" name="confirmPass" id="confirmPass" required></div>
+                </div>
+                <button type="submit" class="submit spacer">Create Account</button>
+            </form>
+            <p class="login spacer">Already have an account? <a href="">Log in!</a></p>
         </div>
     </div>
 </body>
